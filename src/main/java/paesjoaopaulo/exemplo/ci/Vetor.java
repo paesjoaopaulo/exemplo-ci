@@ -1,20 +1,28 @@
 package paesjoaopaulo.exemplo.ci;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
-public class Mediana {
+public class Vetor {
 
     private ArrayList<Integer> vetor;
 
-    public Mediana(ArrayList<Integer> vetor) {
+    public Vetor(ArrayList<Integer> vetor) {
         this.vetor = vetor;
     }
 
-    public double calcular() {
-        double el = this.vetor.size();
-        double mt = el % 2.0;
-        if (mt == 0.0) {
-            this.vetor.get(Integer.parseInt(Double.toString(mt)));
-        }
+    public void ordernar() {
+        Collections.sort(vetor);
+    }
+
+    public double calcularMediana() {
+        this.ordernar();
+        
+        int el = this.vetor.size();
+        int first = this.vetor.get(0);
+        int last = this.vetor.get(el - 1);
+        double mediana = (first + last) / 2.0;
+        
+        return mediana;
     }
 }
