@@ -86,4 +86,16 @@ public class Vetor {
         }
         return aux;
     }
+
+    public ArrayList<Integer> calcularXMaiores(int x) {
+        ArrayList<Integer> aux = new ArrayList<>();
+        if (x <= 0) {
+            return aux;
+        }
+        this.ordernar();
+        for (int i = 0; i < x; i++) {
+            aux.add(this.vetor.get(i));
+        }
+        return aux;
+    }
 }
