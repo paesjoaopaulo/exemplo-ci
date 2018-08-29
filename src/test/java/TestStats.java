@@ -54,7 +54,7 @@ public class TestStats {
         Vetor m = new Vetor(array);
         assertEquals(m.getMaiorValor(), 93);
     }
-    
+
     @Test
     public void testMenorValor() {
         ArrayList<Integer> array = new ArrayList<>();
@@ -67,7 +67,7 @@ public class TestStats {
         Vetor m = new Vetor(array);
         assertEquals(m.getMenorValor(), -15);
     }
-    
+
     @Test
     public void testNumValAcimaMedia() {
         ArrayList<Integer> array = new ArrayList<>();
@@ -80,7 +80,7 @@ public class TestStats {
         Vetor m = new Vetor(array);
         assertEquals(m.getNumValoresAcimaMedia(), 1);
     }
-    
+
     @Test
     public void testNumValAbaixoMedia() {
         ArrayList<Integer> array = new ArrayList<>();
@@ -93,7 +93,7 @@ public class TestStats {
         Vetor m = new Vetor(array);
         assertEquals(m.getNumValoresAbaixoMedia(), 5);
     }
-    
+
     @Test
     public void testDesvioPadrao() {
         ArrayList<Integer> array = new ArrayList<>();
@@ -105,6 +105,20 @@ public class TestStats {
         array.add(0);
         Vetor m = new Vetor(array);
         assertEquals(m.calcularDesvioPadrao(), 38.939, 0.001);
+    }
+
+    @Test
+    public void testRetornar2Menores() {
+        ArrayList<Integer> array = new ArrayList<>();
+        array.add(6);
+        array.add(9);
+        array.add(-1);
+        array.add(93);
+        array.add(-15);
+        array.add(0);
+        Vetor m = new Vetor(array);
+        ArrayList<Integer> aux = new ArrayList<>();
+        assertEquals(m.calcularXMenores(2), aux);
     }
 
 }

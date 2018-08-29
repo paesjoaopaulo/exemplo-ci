@@ -74,4 +74,10 @@ public class Vetor {
         double tmp = soma / (this.vetor.size() - 1);
         return Math.sqrt(tmp);
     }
+
+    public ArrayList<Integer> calcularXMenores(int x) {
+        ArrayList<Integer> aux = new ArrayList<>();
+        aux.add(-1);
+        return aux;
+    }
 }
