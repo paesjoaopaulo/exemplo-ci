@@ -54,8 +54,14 @@ public class Vetor {
         }
         return count;
     }
-    
+
     public int getNumValoresAbaixoMedia() {
-        return 0;
+        int count = 0;
+        for (int i = 0; i < this.vetor.size(); i++) {
+            if (Double.parseDouble(this.vetor.get(i).toString()) < this.calcularMedia()) {
+                count++;
+            }
+        }
+        return count;
     }
 }

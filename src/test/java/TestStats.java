@@ -91,7 +91,7 @@ public class TestStats {
         array.add(-15);
         array.add(0);
         Vetor m = new Vetor(array);
-        assertEquals(m.getNumValoresAcimaMedia(), 6);
+        assertEquals(m.getNumValoresAbaixoMedia(), 5);
     }
 
 }
