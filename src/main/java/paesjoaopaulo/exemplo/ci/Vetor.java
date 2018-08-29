@@ -11,8 +11,9 @@ public class Vetor {
         this.vetor = vetor;
     }
 
-    public void ordernar() {
+    public ArrayList<Integer> ordernar() {
         Collections.sort(vetor);
+        return this.vetor;
     }
 
     public double calcularMediana() {
@@ -37,6 +38,6 @@ public class Vetor {
     }
     
     public int getMaiorValor() {
-        return 0;
+        return this.ordernar().get(this.vetor.size() - 1);
     }
 }
