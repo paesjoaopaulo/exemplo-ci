@@ -28,5 +28,18 @@ public class TestStats {
         Vetor m = new Vetor(array);
         assertEquals(m.calcularMediana(), 39.0f, 0.001);
     }
+    
+    @Test
+    public void testMedia() {
+        ArrayList<Integer> array = new ArrayList<>();
+        array.add(6);
+        array.add(9);
+        array.add(-1);
+        array.add(93);
+        array.add(-15);
+        array.add(0);
+        Vetor m = new Vetor(array);
+        assertEquals(m.calcularMedia(), 15.33f, 0.01);
+    }
 
 }

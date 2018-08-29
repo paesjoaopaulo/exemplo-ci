@@ -17,12 +17,17 @@ public class Vetor {
 
     public double calcularMediana() {
         this.ordernar();
-        
+
         int el = this.vetor.size();
         int first = this.vetor.get(0);
         int last = this.vetor.get(el - 1);
         double mediana = (first + last) / 2.0;
-        
+
         return mediana;
+    }
+    
+    public double calcularMedia(){
+        double media = 0;
+        return media;
     }
 }
