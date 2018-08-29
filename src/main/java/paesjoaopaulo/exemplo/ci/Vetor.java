@@ -40,4 +40,8 @@ public class Vetor {
     public int getMaiorValor() {
         return this.ordernar().get(this.vetor.size() - 1);
     }
+    
+    public int getMenorValor() {
+        return 0;
+    }
 }
