@@ -64,4 +64,8 @@ public class Vetor {
         }
         return count;
     }
+
+    public double calcularDesvioPadrao() {
+        return 100;
+    }
 }

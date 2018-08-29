@@ -93,5 +93,18 @@ public class TestStats {
         Vetor m = new Vetor(array);
         assertEquals(m.getNumValoresAbaixoMedia(), 5);
     }
+    
+    @Test
+    public void testDesvioPadrao() {
+        ArrayList<Integer> array = new ArrayList<>();
+        array.add(6);
+        array.add(9);
+        array.add(-1);
+        array.add(93);
+        array.add(-15);
+        array.add(0);
+        Vetor m = new Vetor(array);
+        assertEquals(m.calcularDesvioPadrao(), 0.000, 0.001);
+    }
 
 }
