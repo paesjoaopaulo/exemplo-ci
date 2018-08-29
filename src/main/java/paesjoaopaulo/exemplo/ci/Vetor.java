@@ -44,4 +44,8 @@ public class Vetor {
     public int getMenorValor() {
         return this.ordernar().get(0);
     }
+    
+    public int getNumValoresAcimaMedia(){
+        return 0;
+    }
 }

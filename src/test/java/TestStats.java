@@ -67,5 +67,18 @@ public class TestStats {
         Vetor m = new Vetor(array);
         assertEquals(m.getMenorValor(), -15);
     }
+    
+    @Test
+    public void testNumValAcimaMedia() {
+        ArrayList<Integer> array = new ArrayList<>();
+        array.add(6);
+        array.add(9);
+        array.add(-1);
+        array.add(93);
+        array.add(-15);
+        array.add(0);
+        Vetor m = new Vetor(array);
+        assertEquals(m.getNumValoresAcimaMedia(), 10);
+    }
 
 }
