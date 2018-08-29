@@ -78,7 +78,7 @@ public class TestStats {
         array.add(-15);
         array.add(0);
         Vetor m = new Vetor(array);
-        assertEquals(m.getNumValoresAcimaMedia(), 10);
+        assertEquals(m.getNumValoresAcimaMedia(), 1);
     }
 
 }

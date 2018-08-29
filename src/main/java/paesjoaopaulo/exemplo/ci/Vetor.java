@@ -36,16 +36,22 @@ public class Vetor {
         }
         return soma / tam;
     }
-    
+
     public int getMaiorValor() {
         return this.ordernar().get(this.vetor.size() - 1);
     }
-    
+
     public int getMenorValor() {
         return this.ordernar().get(0);
     }
-    
-    public int getNumValoresAcimaMedia(){
-        return 0;
+
+    public int getNumValoresAcimaMedia() {
+        int count = 0;
+        for (int i = 0; i < this.vetor.size(); i++) {
+            if (Double.parseDouble(this.vetor.get(i).toString()) > this.calcularMedia()) {
+                count++;
+            }
+        }
+        return count;
     }
 }
