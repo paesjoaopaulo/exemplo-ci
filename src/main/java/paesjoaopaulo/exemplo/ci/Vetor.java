@@ -77,7 +77,13 @@ public class Vetor {
 
     public ArrayList<Integer> calcularXMenores(int x) {
         ArrayList<Integer> aux = new ArrayList<>();
-        aux.add(-1);
+        if (x <= 0) {
+            return aux;
+        }
+        this.ordernar();
+        for (int i = 0; i < x; i++) {
+            aux.add(this.vetor.get(i));
+        }
         return aux;
     }
 }

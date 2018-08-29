@@ -118,6 +118,8 @@ public class TestStats {
         array.add(0);
         Vetor m = new Vetor(array);
         ArrayList<Integer> aux = new ArrayList<>();
+        aux.add(-15);
+        aux.add(-1);
         assertEquals(m.calcularXMenores(2), aux);
     }
 
