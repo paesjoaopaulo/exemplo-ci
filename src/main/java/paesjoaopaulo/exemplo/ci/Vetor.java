@@ -66,6 +66,12 @@ public class Vetor {
     }
 
     public double calcularDesvioPadrao() {
-        return 100;
+        double soma = 0;
+        double media = this.calcularMedia();
+        for (int i = 0; i < this.vetor.size(); i++) {
+            soma += (this.vetor.get(i) - media) * (this.vetor.get(i) - media);
+        }
+        double tmp = soma / (this.vetor.size() - 1);
+        return Math.sqrt(tmp);
     }
 }

@@ -104,7 +104,7 @@ public class TestStats {
         array.add(-15);
         array.add(0);
         Vetor m = new Vetor(array);
-        assertEquals(m.calcularDesvioPadrao(), 0.000, 0.001);
+        assertEquals(m.calcularDesvioPadrao(), 38.939, 0.001);
     }
 
 }
