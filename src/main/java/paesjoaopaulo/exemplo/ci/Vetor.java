@@ -35,4 +35,8 @@ public class Vetor {
         }
         return soma / tam;
     }
+    
+    public int getMaiorValor() {
+        return 0;
+    }
 }
