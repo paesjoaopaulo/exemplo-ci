@@ -25,9 +25,14 @@ public class Vetor {
 
         return mediana;
     }
-    
-    public double calcularMedia(){
-        double media = 0;
-        return media;
+
+    public double calcularMedia() {
+
+        double soma = 0;
+        int tam = this.vetor.size();
+        for (int i = 0; i < tam; i++) {
+            soma += this.vetor.get(i);
+        }
+        return soma / tam;
     }
 }
