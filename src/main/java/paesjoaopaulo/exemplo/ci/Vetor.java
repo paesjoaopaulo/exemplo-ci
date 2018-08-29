@@ -54,4 +54,8 @@ public class Vetor {
         }
         return count;
     }
+    
+    public int getNumValoresAbaixoMedia() {
+        return 0;
+    }
 }
