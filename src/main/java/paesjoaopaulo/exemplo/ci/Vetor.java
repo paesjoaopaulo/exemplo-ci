@@ -42,6 +42,6 @@ public class Vetor {
     }
     
     public int getMenorValor() {
-        return 0;
+        return this.ordernar().get(0);
     }
 }

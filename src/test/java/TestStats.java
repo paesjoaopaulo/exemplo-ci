@@ -65,7 +65,7 @@ public class TestStats {
         array.add(-15);
         array.add(0);
         Vetor m = new Vetor(array);
-        assertEquals(m.getMenorValor(), 9999999);
+        assertEquals(m.getMenorValor(), -15);
     }
 
 }
